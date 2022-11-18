@@ -104,12 +104,6 @@ int zweitkleinstes (int feld[], int n) {
     for (int i = pos - 1; i < n - 1; i++) {
         feld2[i] = feld2[i + 1];
     }
-    /*
-    // displaying elements of feld2[]:
-    for (int i = 0; i < n; i++) {
-        printf("%d\n", feld2[i]);
-    }
-    */
     return kleinstes(feld2, n - 1);
 }
 

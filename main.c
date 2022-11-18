@@ -91,7 +91,6 @@ int kleinstes (int feld[], int n) {
     return stelle;
 }
 
-// TODO:
 int zweitkleinstes (int feld[], int n) {
     int feld2[n];
 
@@ -137,7 +136,6 @@ void zeigeFeld(int arr[], int n) {
     printf("]\n");
 }
 
-// TODO
 void swap(int arr[], int arr2[], int n) {
 
     int buffer;
@@ -150,6 +148,9 @@ void swap(int arr[], int arr2[], int n) {
 
 
 int main() {
+
+    // TODO: switch cases schreiben
+
     // rundeSumme(19, 39, 7);
     // printf("%d", mauern(3, 1, 8));
     // printf("%d", mauern(3, 1, 9));

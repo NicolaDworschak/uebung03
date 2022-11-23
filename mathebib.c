@@ -2,7 +2,7 @@
 
 const float pi = 3.141592;
 const float eps = 1E-6f;
-const int n = 20;
+const int n = 15;
 
 int my_fac(int x) {
     int fac= 1;

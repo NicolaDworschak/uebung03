@@ -2,7 +2,6 @@
 
 const float pi = 3.141592;
 const float eps = 1E-6f;
-const int n = 15;
 
 int my_fac(int x) {
     int fac= 1;
@@ -14,9 +13,9 @@ int my_fac(int x) {
 }
 
 float my_sin(float x) {
-    float sin = x, zaehler = 1.0, nenner = 1.0, sign = -1.0;
+    float sin = x, zaehler = x, nenner = 1.0, sign = -1.0;
 
-    for (int i=3; i<n; i+2) {
+    for (int i=3; i<20; i+=2) {
         zaehler *= x*x;
         nenner *= (float)((i-1)*i);
         sign *= -1.0;
@@ -27,11 +26,18 @@ float my_sin(float x) {
 }
 
 float my_cos(float x) {
-    // TODO
+    return my_sin(x+(pi/2));
 }
 
 float my_exp(float x) {
-    // TODO
+    float exp = 1.0, zaehler = 1.0, nenner = 1.0;
+
+    for (int i=1; i<20; i++) {
+        zaehler *= i;
+        nenner *= (float)((i-1)*i);
+        exp += zaehler/nenner;
+    }
+    return exp;
 }
 
 int main() {

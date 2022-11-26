@@ -165,12 +165,12 @@ int main() {
     // printf("%d", unlucky1(array, 5));
     // printf("%d", kleinstes(feld, 6));
     // printf("%d", zweitkleinstes(feld, 6));
-    reverse(f, 7);
-    /*
+    // reverse(f, 7);
+    
     swap(feld, arr, 6);
     zeigeFeld(feld, 6);
     zeigeFeld(arr, 6);
-    */
+    
 
 
 }
